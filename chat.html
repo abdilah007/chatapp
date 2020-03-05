@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+body{
+
+
+      font-size: 30px;
+       background-color: #a9e1ea;
+}
+.headchat{
+          
+          background-color: #3096f0;
+           max-width: 670px;
+           margin: 0 auto;
+           height: 100px;
+           border-radius: 10px;
+          
+
+}
+.dimg{
+
+         width: 70px;
+         border-radius: 50%;
+         display: inline-block;
+         margin-top: 10px;
+         margin-left: 10px;
+}
+.im{
+
+         width: 70px;
+         border-radius: 50%;
+         display: block;
+         margin-top: 10px;
+         margin-left: 10px;
+         float: left;
+}
+.im2{
+
+         width: 70px;
+         border-radius: 50%;
+         display: block;
+         margin-top: 10px;
+         margin-left: 10px;
+         float: right;
+}
+
+
+#pare{
+
+   margin: 0 auto;
+   padding: 0 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+   background-color: white;
+    max-width: 630px;
+     height: 600px;
+      overflow: auto;
+
+
+}
+
+.all{
+
+   width: 100%;
+}
+
+
+.clear{
+
+  clear: both;
+}
+.container {
+  width: 72%;
+  float: left;
+ 
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+   word-wrap: break-word;
+}
+
+.darker {
+
+  float: right;
+  border-color: #ccc;
+    width: 72%;
+  float: right;
+  word-wrap: break-word;
+ 
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0
+}
+.container p{
+    padding: 30px;
+    background-color: #5cd4e8;
+    border-radius: 10px;
+
+
+}
+
+.darker p{
+    padding: 30px;
+    background-color: #45a8ff;
+    border-radius: 10px;
+
+
+}
+
+
+
+
+input[type=text]{
+
+
+    width: 20%;
+    height: 50px;
+    border-radius: 20px;
+    position: absolute;
+    left: 636px;
+    top:835px;
+   
+  
+
+
+}
+ .btn{
+
+    background-color: #47AAE6;
+  width: 100px;
+  border: none;
+  color: white;
+  top: 838px;
+  left: 1031px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  font-size: 32px;
+  cursor: pointer;
+  transition: .1s ease;
+    
+  }
+
+.btn1{
+
+    background-color: #47AAE6;
+    width: 100px;
+    top: 838px;
+  left: 1156px;
+  position: absolute;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 31px;
+  cursor: pointer;
+  transition: .1s ease;
+    
+  }
+
+
+  .btn1:hover{
+      
+      border-radius: 5px;
+    
+    
+  }
+
+
+
+
+    input[type=button]:hover{
+      
+      border-radius: 5px;
+    
+    
+  }
+     input[type=text]:hover{
+
+box-shadow: 0px 5px 30px -3px #559fee;
+  
+
+}
+  .btn:hover{
+      
+      border-radius: 5px;
+    
+    
+  }
+  .ib{
+
+    min-height: 100px;
+    width: 670px;
+    margin-left: 857px;
+    background-color: white;
+    margin: auto;
+  }
+</style>
+</head>
+<body>
+
+<h2 align="center" >Pessenger Chat</h2>
+
+<div class="headchat">
+<div class="dimg">
+  
+ <img src="Layer_14.png" width="100%">
+
+</div>
+  <h2  style="display: inline; margin-left: 109px;">Chat Messages</h2>
+
+</div>
+<div id="pare">
+
+</div>
+
+<div class="ib">
+ <input type="text" id="inp" placeholder="type a message"><br>
+</div>
+  <button class="btn" id="bt1" onclick="x()">Send</button>
+  <button class="btn1" id="bt2" onclick="y()">Send2</button>
+
+
+<script>
+  
+var ipt = document.getElementById("inp");
+
+var res = document.getElementById("pare");
+
+
+
+
+         function x() {
+  if (!ipt.value) {
+
+    alert("please Enter message");
+  }else{
+ res.innerHTML+="<div class = 'all'><div class='im'><img src='Laye_13.png' width='100%'></div><div class='container'><p align='left'>" + ipt.value  +"</p></div></div><div class = 'clean'></div>";
+
+  res.scrollBy(0, 10000000);
+  ipt.value = "";
+
+    
+  }        
+
+ 
+
+  }
+
+
+
+
+
+
+
+
+
+
+function y() {
+  if (!ipt.value) {
+
+    alert("please Enter message");
+  }else{
+
+res.innerHTML+="<div class = 'all'><div class='im2'><img src='Layer_14.png' width='100%'></div><div class='darker'><p align='right'>" + ipt.value  +"</p></div></div><div class = 'clean'></div>";
+     res.scrollBy(0, 1000000000);
+      ipt.value = "";
+
+
+  }
+      
+   
+
+
+}
+
+
+
+
+
+    
+ 
+  
+  
+
+  
+  
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
